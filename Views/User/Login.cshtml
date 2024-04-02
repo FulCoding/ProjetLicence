@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Login";
+     Layout="_LayoutHome";
+}
+@model BankApp.Models.LoginModel;
+<div class="wrapper">
+        <div class="logo">
+            <img src="../images/user.png" alt="">
+        </div>
+        <div class="text-center mt-4 name">
+            Citi Bank
+        </div>
+        <form asp-action="Login" asp-controller="User" class="p-3 mt-3" >
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input asp-for="Email"  placeholder="Email">
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input asp-for="Password" placeholder="Password">
+            </div>
+            <button asp-action="Login" asp-controller="User" class="btn mt-3" >Login</button>
+        </form>
+        <div class="text-center fs-6">
+            <a asp-action="" asp-controller="">Forget password?</a> or <a asp-action="Signup" asp-controller="User">Sign up</a>
+        </div>
+    </div>
