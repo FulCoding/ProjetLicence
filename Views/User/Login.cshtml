@@ -3,6 +3,7 @@
      Layout="_LayoutHome";
 }
 @model BankApp.Models.LoginModel;
+
 <div class="wrapper">
         <div class="logo">
             <img src="../images/user.png" alt="">
@@ -10,18 +11,26 @@
         <div class="text-center mt-4 name">
             Citi Bank
         </div>
-        <form asp-action="Login" asp-controller="User" class="p-3 mt-3" >
+         <p class="text-danger text-center">@ViewData["error"]</p>
+        <form asp-action="Login" asp-controller="User" class=" mt-3" >
             <div class="form-field d-flex align-items-center">
                 <span class="far fa-user"></span>
                 <input asp-for="Email"  placeholder="Email">
+               
             </div>
+           
             <div class="form-field d-flex align-items-center">
                 <span class="fas fa-key"></span>
-                <input asp-for="Password" placeholder="Password">
+                <input asp-for="Password" type="password"  placeholder="Mot de passe">
             </div>
-            <button asp-action="Login" asp-controller="User" class="btn mt-3" >Login</button>
+            <button asp-action="Login" asp-controller="User" class="btn mt-3" >Se connecter</button>
         </form>
         <div class="text-center fs-6">
-            <a asp-action="" asp-controller="">Forget password?</a> or <a asp-action="Signup" asp-controller="User">Sign up</a>
+            <a asp-action="AdminHome" asp-controller="Admin">Mot de passe oublier?</a>  <a asp-action="Signup" asp-controller="User">Inscrivez-vous</a>
         </div>
     </div>
+<script>
+        localStorage.clear();
+        localStorage.setItem("userid", ViewBag.Id); // Exemple:stocker l'id de l'utilisateur
+    console.log(@ViewBag.Id)
+</script>

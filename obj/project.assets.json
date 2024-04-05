@@ -3457,7 +3457,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "Mailkit >= 3.0.1",
+      "Mailkit >= 3.1.0",
       "Microsoft.AspNetCore >= 2.2.0",
       "Microsoft.AspNetCore.Authentication >= 2.2.0",
       "Microsoft.AspNetCore.Authentication.Cookies >= 2.2.0",
@@ -3505,7 +3505,7 @@
         "dependencies": {
           "Mailkit": {
             "target": "Package",
-            "version": "[3.0.1, )"
+            "version": "[3.1.0, )"
           },
           "Microsoft.AspNetCore": {
             "target": "Package",
@@ -3565,17 +3565,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.103\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "BankApp dépend de MailKit (>= 3.0.1), mais MailKit 3.0.1 est introuvable. Une meilleure correspondance approximative de MailKit 3.1.0 a été résolue.",
-      "libraryId": "MailKit",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.0"
-      ]
-    }
-  ]
+  }
 }

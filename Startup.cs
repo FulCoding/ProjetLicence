@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Sqlite;
+using BankApp;
 
 namespace BankApp
 {
@@ -29,12 +32,16 @@ namespace BankApp
             .AddCookie(options =>
             {
                 // Définissez les options de l'authentification par cookie
-                options.LoginPath = "/User/Login"; // Page de connexion
-                options.AccessDeniedPath = "/"; // Page d'accès refusé
+                options.LoginPath = "/Login"; // Page de connexion
+                options.AccessDeniedPath = "/Login"; // Page d'accès refusé
                 options.Cookie.Name = ".BankApp.Cookie"; // Nom du cookie
                 options.Cookie.HttpOnly = true; // Sécuriser le cookie
                 options.SlidingExpiration = true; // Renouveler l'expiration du cookie
             });
+            // using Microsoft.EntityFrameworkCore;
+            services.AddDbContext<Dbcontext>(options =>
+                options.UseSqlite("Data Source=Bankdb.db"));
+            
 
         }
 

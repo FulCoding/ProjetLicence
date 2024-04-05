@@ -61,15 +61,16 @@ html {
 body {
   /* Margin bottom by footer height */
  /* margin-bottom: 60px;*/
- background:#666;
+ background:#cdcbcbb1;
  
 }
 
 .body{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.667),rgba(83, 72, 72, 0.793)), url("https://bootstrapmade.com/demo/templates/Arsha/assets/img/hero-img.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.336),rgba(83, 72, 72, 0.418)), url("../images/IMG-20240403-WA0003.jpg");
   background-size: cover;
   color: #f1f1f1;
+  background-position: center;
 }
 .footer {
   position: absolute;
@@ -154,6 +155,9 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
 }
+.text2{
+text-align: justify;
+}
 /*----------login form-------------*/
 
 /* Importing fonts from Google */
@@ -167,9 +171,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+ .body2 {
     background: linear-gradient(rgba(0, 0, 0, 0.667),rgba(83, 72, 72, 0.793));
-}
+} 
 
 .wrapper {
     max-width: 500px;
@@ -263,6 +267,15 @@ body {
         padding: 40px 15px 15px 15px;
     }
 }
-.registerform{
-  
+/*---------------------admin----------------------*/
+.adminhomepage{
+  display: flex;
+}
+.adminnavbar{
+  width: 100vw;
+  height: 100vh;
+}
+.adminsidebar{
+  width: 200px;
+  height: 100vh;
 }

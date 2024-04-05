@@ -84,3 +84,6 @@ C:\Users\Blaise\Desktop\appstage\BankApp\obj\Debug\netcoreapp3.0\Razor\Views\Sha
 C:\Users\Blaise\Desktop\appstage\BankApp\obj\Debug\netcoreapp3.0\Razor\Views\Home\Test.cshtml.g.cs
 C:\Users\Blaise\Desktop\appstage\BankApp\obj\Debug\netcoreapp3.0\Razor\Views\User\Login.cshtml.g.cs
 C:\Users\Blaise\Desktop\appstage\BankApp\obj\Debug\netcoreapp3.0\Razor\Views\User\Signup.cshtml.g.cs
+C:\Users\Blaise\Desktop\appstage\BankApp\obj\Debug\netcoreapp3.0\Razor\Views\Admin\AdminHome.cshtml.g.cs
+C:\Users\Blaise\Desktop\appstage\BankApp\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+C:\Users\Blaise\Desktop\appstage\BankApp\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LayoutSimple.cshtml.g.cs

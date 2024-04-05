@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using BankApp.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
+
 namespace BankApp.Controllers
 {
     public class HomeController : Controller
@@ -24,7 +25,7 @@ namespace BankApp.Controllers
         {
             return View();
         }
-        [Authorize]
+        //[Authorize]
         public IActionResult Test()
         {
             return View();
