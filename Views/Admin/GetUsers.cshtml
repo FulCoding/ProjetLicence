@@ -1,0 +1,55 @@
+@{
+    Layout="_LayoutAdmin";
+    ViewData["Title"]="GetUsers";
+}
+@model List<BankApp.Models.User> ;
+<div class="tableuser">
+    <table class="table table-success table-striped nowrap " id="example" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+               Nom
+            </th>
+            <th>
+                Numero
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Role
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model){
+            <tr>
+              
+                <td>
+                    @item.UserName
+                </td>
+                <td>
+                    @item.Telephone
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                    @item.Role.RoleName
+                </td>
+                <td>
+                    <a asp-action="Update" asp-controller="Admin"  asp-route-id="@item.UserId" class="btn btn-warning" >Modifier </a>
+                    <a asp-action="" asp-controller="" asp-route-id="@item.UserId" class="btn btn-info" >Details </a>
+                    <a  asp-action="" asp-controller="" asp-route-id="@item.UserId" class="btn btn-danger" >Delete</a>
+                </td>
+            </tr>
+              
+        }
+    </tbody>
+</table>
+
+
+<div>
